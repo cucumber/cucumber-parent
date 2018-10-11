@@ -1,0 +1,12 @@
+sudo: false
+language: java
+
+jobs:
+  include:
+  - stage: deploy
+    script:
+    - "./scripts/travis_deploy.sh"
+env:
+  global:
+  - secure: QK031Wu7jxDRP1YOqi2qWrTPLOkqvxo3JNHeswdbANUG7o6PVNT4MLuFM9Foe0Mn7h6qhNEBagH8wvTEXZIexh37PJqRfxvI2wQFK92xTaoZMFEW26DBFqjIsNifQ0MT9xZX6t54wbSNUrjAwRxyHuC3cgNkRBJycnKz9qkl2uE=
+  - secure: FKcrfJen8Ar1Xv9/fxIObX//VPVaiwlDmJJTJ9Tecq4mxlq6Km+Eq0dGhlnqCng7uEJJUOWGbwqGhHcH/TDTrlBiBLJqZ6hwj2/cXqMsk3a4OQZ25xy2eZKmg3+3Le8vRP6eYZo+qfF0QdcXrorcPu4LDZs5aQMiF+yV453Xh1Y=
