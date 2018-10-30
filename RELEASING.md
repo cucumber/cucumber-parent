@@ -27,8 +27,7 @@ Now release everything:
 mvn release:clean release:prepare -DautoVersionSubmodules=true -Darguments="-DskipTests=true"  
 ```
 
-Travis will now deploy everything. Once travis is done go into [Nexus](https://oss.sonatype.org/) and inspect, 
-close and release the staging repository.
+Travis will now deploy everything.
 
 It is preferable to use the automated deployment process over the manual process. However should travis.ci fail or should the 
 need arise to setup another continuous integration system the [Manual deployment](#manual-deployment) section 
