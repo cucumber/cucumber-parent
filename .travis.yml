@@ -1,15 +1,2 @@
 sudo: false
 language: java
-jobs:
-  include:
-  - stage: deploy
-    script:
-    - "./scripts/travis_deploy.sh"
-before_install:
-- openssl aes-256-cbc -K $encrypted_dbe4de280e0d_key -iv $encrypted_dbe4de280e0d_iv
-  -in scripts/codesigning.asc.enc -out scripts/codesigning.asc -d
-- gpg --batch --fast-import scripts/codesigning.asc
-env:
-  global:
-  - secure: xuGxH7rEmguOnRxgQsab02bAqzspaiDZHKw8VuR8OFcT3FGkYszEFGhypc1kWcUpm7GEd7Hrle3W3kiy37yalSWfvb4d82QSzLzJJU5wBw1U93exIOgga6PMCLHG7m/E/KGwxWcjMTqwvLB/Ho//Q4Gigf1/YYMCffHI13bpa61oYFhpZq2rwnL4344dfN+4TPNACoAXLy09ZCIv9Qn3Vk29Ul9ik1N6JacLxIU2Z7tOpNDNafH0CctpuwPKW6a4hzXO6JUoXGkAuIOYxCc0seyOX/NHbv8ZLKOdVBzCcdtYyAUJX8fbwMNvAzkHc2etd37btbycqFWaoe0VhSC7fXx9Hj67l6g7HTVhJKfgXm8rIULOasWebA/DtiFX48uaddmLzo0lMC5onxYXVkd2odhfo3v7ADk3VvCKVxQ7+KQlOHoOE7kDZbCLh52Gk9KdxSYxn0LMvYPDwoVUXCtnzTNrlvxxd+mNRvw+sxUJeRtRAzV4zmQmdvJOxkkhMkfPISLc5OyV1tj0c1mF68d0fuxdlexJIEUTU1AG0SygyJcpdo185hzFpMepPscrRITIiEOU7iB7y/9FQX88AanLetRVMT/0kzyL0Kub8KMqotrv6jUZRr/D2GTpTTw/YpItUpHMUAB6dsXiNpzdRvkzqhlY0yNt5/Y6Au/p3Se6/kk=
-  - secure: vB2M3MSZVCQTtl3sdERoSDAOPFuACm9V9Q1omslu7lQshVkU87Jb8hsOOY5GhylQfA+Bg4b3ArhGIjQ+z+t26z03eIFC717DE1yEkxPfbdvF5+yrJju44ITyX3eAZoNVgIHApY3eiCOPFI86z5FSHjGEnC+j4jaR/KRAfAfzSAurM+D2NEkZg1WjoqQ1FUY/Fwxh9pz/hEmhtOp75ritNWLEH3U594kkXNvs6nbPRE5eXbVAImP4JB3oMy9yPUfKO6FWzj//kkpzZk1Rwcp0eGX2jtUU/Va/TtB4k/lfDmheywH73DyTo+1OkylWgAmSRFGnGVbm1ByEhrwy9kveWkMzChci2PGNNEGvIyRI5Pek+1xwYerHYAkL7h+wlapcRVURar+LzFPVO9jrGuMM2PUEhZm4Izfxb65mzVCsoLx+HMgCQm+nB6SFRC/UW4oCmutgkWicUBndO/IdSlWxvnwwmI0jg9q3GEG2XB7zQd+WLw2/eRnMcYoZvAsqosd1cmgI6z+F4ls4FMczCKrNExLunRg+z4qD3EZCu103i2uOE91Qxoy2hdC6bnM+7UnXMiO6o78/OVEHSRUH7uTB3iOcurE1fRegXZ8ByZlFIIDkw3buH9cg2PwFf+cLgkpTy/QNO5wu40sPNxBaCycYLh1rsd9zBoPFdWkRraU979o=
