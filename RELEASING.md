@@ -16,6 +16,7 @@ git checkout master
 Also check if you can upgrade any dependencies:
 
 ```
+mvn versions:display-plugin-updates
 mvn versions:display-dependency-updates
 ```
 
