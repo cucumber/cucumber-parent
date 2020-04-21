@@ -92,3 +92,12 @@ for example:
 ```
 mvn release:perform -Psign-source-javadoc -DskipTests=true
 ```
+
+## Using the monorepo settings
+
+Another way to release is to use the settings and encrypted secrets from the monorepo:
+
+```
+source ../cucumber/secrets/.bash_profile
+mvn release:perform -Psign-source-javadoc -DskipTests=true --settings ../cucumber/.templates/java/scripts/ci-settings.xml
+```
