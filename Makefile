@@ -37,7 +37,7 @@ update-major-dependency-versions:
 .PHONY: update-major-dependency-versions
 
 .release-in-docker: default
-	[ -f '/home/cukebot/import-gpg-key.sh' ] && /home/cukebot/import-gpg-key.sh
+	[ -f '/home/cukebot/configure' ] && /home/cukebot/configure
 	mvn --batch-mode release:clean release:prepare -DautoVersionSubmodules=true -Darguments="-DskipTests=true -DskipITs=true -Darchetype.test.skip=true"
 	git checkout "v$(NEW_VERSION)"
 	mvn deploy -P-examples -P-compatibility -Psign-source-javadoc -DskipTests=true -DskipITs=true -Darchetype.test.skip=true
@@ -50,14 +50,13 @@ release:
 	git -C ../secrets pull
 	docker run \
 	  --volume "${shell pwd}":/app \
-	  --volume "${shell pwd}/../secrets/import-gpg-key.sh":/home/cukebot/import-gpg-key.sh \
+	  --volume "${shell pwd}/../secrets/configure":/home/cukebot/configure \
 	  --volume "${shell pwd}/../secrets/codesigning.key":/home/cukebot/codesigning.key \
+	  --volume "${shell pwd}/../secrets/gpg-with-passphrase":/home/cukebot/gpg-with-passphrase \
 	  --volume "${HOME}/.m2"/repository:/home/cukebot/.m2/repository \
-	  --volume "${HOME}/.gitconfig":/home/cukebot/.gitconfig \
-	  --env-file ../secrets/secrets.list \
+	  --env-file "${shell pwd}/../secrets/secrets.list" \
 	  --user 1000 \
 	  --rm \
 	  -it cucumber/cucumber-build:latest \
 	  make .release-in-docker
 .PHONY: release
-
