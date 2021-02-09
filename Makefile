@@ -50,6 +50,7 @@ release:
 	git -C ../secrets pull
 	docker run \
 	  --volume "${shell pwd}":/app \
+		--volume "${shell pwd}/../secrets/.ssh":/home/cukebot/.ssh \
 	  --volume "${shell pwd}/../secrets/configure":/home/cukebot/configure \
 	  --volume "${shell pwd}/../secrets/codesigning.key":/home/cukebot/codesigning.key \
 	  --volume "${shell pwd}/../secrets/gpg-with-passphrase":/home/cukebot/gpg-with-passphrase \
