@@ -6,7 +6,7 @@ on:
 
 jobs:
   pre-release-check:
-    uses: cucumber/.github/.github/workflows/prerelease-checks.yml
+    uses: cucumber/.github/.github/workflows/prerelease-checks.yml@main
 
   create-github-release:
     name: Create GitHub Release and Git tag
