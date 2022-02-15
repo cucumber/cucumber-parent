@@ -1,13 +1,17 @@
-name: Release GitHub
+name: Release on GitHub
 
 on:
   push:
     branches: [release/*]
 
 jobs:
+  pre-release-check:
+    uses: cucumber/.github/.github/workflows/prerelease-checks.yml
+
   create-github-release:
     name: Create GitHub Release and Git tag
     runs-on: ubuntu-latest
+    needs: [pre-release-check]
     environment: Release
     permissions:
       contents: write
