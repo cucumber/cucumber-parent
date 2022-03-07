@@ -48,7 +48,7 @@
         <maven-toolchains-plugin.version>3.0.0</maven-toolchains-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.12</nexus-staging-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <spotless-maven-plugin.version>2.20.0</spotless-maven-plugin.version>
     </properties>
