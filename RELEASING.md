@@ -47,13 +47,16 @@ mvn versions:set -DnewVersion=X.Y.Z-SNAPSHOT
 
 Only people with permission to push to release/* branches can make releases.
 
-1. Push to a new `release/*` branch to trigger the `release-*` workflows
-   ```
-   git push origin main:release/v$next_release
-   ```
-1. Wait until the `release-*` workflows in GitHub Actions have passed
-1. In `pom.xml`, bump the **patch** version and append `-SNASHOT` (e.g. `1.2.4-SNAPSHOT`) and commit/push
-1. Announce the release
+1. Check the next version is correct:
+
+    make version
+
+2. Update the version in `pom.xml` and push to the release branch:
+
+    make release
+
+3. Wait until the `release-*` workflows in GitHub Actions have passed
+4. Announce the release
    * in the `#newsletter` Slack channel
    * on the `@cucumberbdd` Twitter account
    * write a blog post
