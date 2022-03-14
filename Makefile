@@ -38,5 +38,5 @@ update-major-dependency-versions:
 
 release:
 	mvn --batch-mode release:clean release:prepare -DautoVersionSubmodules=true -Darguments="-DskipTests=true -DskipITs=true -Darchetype.test.skip=true"
-	git push origin v$(NEW_VERSION):release/v$(NEW_VERSION)
+	git push origin $$(git rev-list --max-count=1 v$(NEW_VERSION)):refs/heads/release/v$(NEW_VERSION)
 .PHONY: release
