@@ -43,26 +43,20 @@ Check if branch name and version are as expected. To change version run:
 mvn versions:set -DnewVersion=X.Y.Z-SNAPSHOT
 ```
 
-## Secrets ##
-
-Secrets are required to make releases. Members of the core team can install
-keybase and join the `cucumberbdd` team to access these secrets.
-
-During the release process, secrets are fetched from keybase and used to sign
-and upload the maven artifacts.
-
 ## Make the release ##
 
-Check if branch name and version are as expected:
+Only people with permission to push to release/* branches can make releases.
 
-```
-make version
-```
+1. Check the next version is correct:
 
-Do the release:
+    make version
 
-```
-make release
-``` 
+2. Update the version in `pom.xml` and push to the release branch:
 
-All done! Hurray!
+    make release
+
+3. Wait until the `release-*` workflows in GitHub Actions have passed
+4. Announce the release
+   * in the `#newsletter` Slack channel
+   * on the `@cucumberbdd` Twitter account
+   * write a blog post
