@@ -1,6 +1,7 @@
 name: test-java
 
 on:
+  workflow_call:
   push:
   pull_request:
     branches:
