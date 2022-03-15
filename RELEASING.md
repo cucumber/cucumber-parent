@@ -57,7 +57,7 @@ You need the `[changelog]` command-line tool installed.
 
     make release
 
-3. Wait until the `release-*` workflows in GitHub Actions have passed:
+3. Wait until the `release-*` workflows have passed for the new release branch:
   * [![Release maven package](https://github.com/cucumber/cucumber-parent/actions/workflows/release-java.yml/badge.svg)](https://github.com/cucumber/cucumber-parent/actions/workflows/release-java.yml)
   * [![Release on GitHub](https://github.com/cucumber/cucumber-parent/actions/workflows/release-github.yml/badge.svg)](https://github.com/cucumber/cucumber-parent/actions/workflows/release-github.yml)
 4. Announce the release
