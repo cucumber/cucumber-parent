@@ -45,7 +45,9 @@ mvn versions:set -DnewVersion=X.Y.Z-SNAPSHOT
 
 ## Make the release ##
 
-Only people with permission to push to release/* branches can make releases.
+Only people with permission to push to `release/*` branches can make releases.
+
+You need the `[changelog]` command-line tool installed.
 
 1. Check the next version is correct:
 
@@ -60,3 +62,5 @@ Only people with permission to push to release/* branches can make releases.
    * in the `#newsletter` Slack channel
    * on the `@cucumberbdd` Twitter account
    * write a blog post
+
+[changelog]: https://github.com/cucumber/changelog#installation
