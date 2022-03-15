@@ -37,7 +37,7 @@ update-major-dependency-versions:
 .PHONY: update-major-dependency-versions
 
 release:
-	changelog release $(NEW_VERSION) --tag-format "v%s" -o CHANGELOG.md
+	changelog release v$(NEW_VERSION) -o CHANGELOG.md
 	mvn --batch-mode release:clean release:prepare -DautoVersionSubmodules=true -Darguments="-DskipTests=true -DskipITs=true -Darchetype.test.skip=true"
 	git push origin $$(git rev-list --max-count=1 v$(NEW_VERSION)):refs/heads/release/v$(NEW_VERSION)
 .PHONY: release
