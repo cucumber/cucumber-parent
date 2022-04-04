@@ -39,4 +39,5 @@ update-major-dependency-versions:
 release:
 	mvn --batch-mode release:clean release:prepare -DautoVersionSubmodules=true -Darguments="-DskipTests=true -DskipITs=true -Darchetype.test.skip=true"
 	git push origin $$(git rev-list --max-count=1 v$(NEW_VERSION)):refs/heads/release/v$(NEW_VERSION)
+	gh run watch `gh run list -b release/v$(NEW_VERSION) --json databaseId -q '.[].databaseId'`
 .PHONY: release
