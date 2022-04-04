@@ -55,7 +55,8 @@ Only people with permission to push to release/* branches can make releases.
 
     make release
 
-3. Wait until the `release-*` workflows in GitHub Actions have passed
+This will wait until the release workflows in GitHub Actions have passed.
+
 4. Announce the release
    * in the `#newsletter` Slack channel
    * on the `@cucumberbdd` Twitter account
