@@ -50,7 +50,7 @@
         <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
-        <spotless-maven-plugin.version>2.24.1</spotless-maven-plugin.version>
+        <spotless-maven-plugin.version>2.25.0</spotless-maven-plugin.version>
     </properties>
 
     <licenses>
