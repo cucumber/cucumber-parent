@@ -1,8 +1,10 @@
 name: test-java
 
 on:
-  workflow_call:
   push:
+    branches:
+      - main
+      - renovate/**
   pull_request:
     branches:
       - main
