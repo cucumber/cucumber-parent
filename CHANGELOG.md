@@ -7,14 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## Changed
+### Changed
 - Updated various plugins
 - Added maven-war-plugin
 - Remove unused travis build profile
 
 ## [3.0.0] - 2022-05-22
 
-## Changed
+### Changed
 - Updated various plugins
 
 ## [v2.3.0]
