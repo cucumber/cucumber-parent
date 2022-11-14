@@ -17,15 +17,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated various plugins
 
-## v2.3.0
+## [2.3.0]
 ### Changed
 - Updated various plugins
 
-## v2.1.2
+## [2.1.2]
 
 ## Changed
 
 [Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.0.0...main
 [4.0.0]: https://github.com/cucumber/cucumber-parent/compare/v3.0.0...main
 [3.0.0]: https://github.com/cucumber/cucumber-parent/compare/v3.0.0...v2.3.0
-ithub.com/cucumber/cucumber-parent/compare/v2.1.1...v2.1.2
+[2.3.0]: https://github.com/cucumber/cucumber-parent/compare/v2.3.0...v2.1.2
+[2.1.2]: https://github.com/cucumber/cucumber-parent/compare/v2.3.0...v2.1.2
