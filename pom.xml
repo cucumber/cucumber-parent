@@ -22,6 +22,7 @@
     </developers>
 
     <properties>
+        <project.build.outputTimestamp>1000000</project.build.outputTimestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <outputDirectory>${project.build.directory}</outputDirectory>
