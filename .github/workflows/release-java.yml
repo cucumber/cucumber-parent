@@ -1,32 +1,21 @@
-name: Release maven package
+name: Release Maven
 
 on:
   push:
-    branches:
-      - release/*
+    branches: [release/*]
 
 jobs:
-  pre-release-check:
-    uses: cucumber/.github/.github/workflows/prerelease-checks.yml@main
-
-  test-java:
-    uses: ./.github/workflows/test-java.yml
-
   publish-mvn:
     name: Publish Maven Package
-    needs: [pre-release-check, test-java]
     runs-on: ubuntu-latest
     environment: Release
-
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-java@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
         with:
-          distribution: "temurin"
-          java-version: "11"
-          cache: "maven"
-
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'maven'
       - uses: cucumber/action-publish-mvn@v2.0.0
         with:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
