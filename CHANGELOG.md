@@ -41,12 +41,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.1.1...main
-[4.1.1]: https://github.com/cucumber/cucumber-parent/compare/v4.1.0...main
-[4.1.0]: https://github.com/cucumber/cucumber-parent/compare/v4.0.2...main
-[4.0.2]: https://github.com/cucumber/cucumber-parent/compare/v4.0.1...main
-[4.0.1]: https://github.com/cucumber/cucumber-parent/compare/v4.0.0...main
-[4.0.0]: https://github.com/cucumber/cucumber-parent/compare/v3.0.0...main
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.1.1...HEAD
+[4.1.1]: https://github.com/cucumber/cucumber-parent/compare/v4.1.0...v4.1.1
+[4.1.0]: https://github.com/cucumber/cucumber-parent/compare/v4.0.2...v4.1.0
+[4.0.2]: https://github.com/cucumber/cucumber-parent/compare/v4.0.1...v4.0.2
+[4.0.1]: https://github.com/cucumber/cucumber-parent/compare/v4.0.0...v4.0.1
+[4.0.0]: https://github.com/cucumber/cucumber-parent/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/cucumber/cucumber-parent/compare/v3.0.0...v2.3.0
 [2.3.0]: https://github.com/cucumber/cucumber-parent/compare/v2.3.0...v2.1.2
 [2.1.2]: https://github.com/cucumber/cucumber-parent/compare/v2.3.0...v2.1.2
