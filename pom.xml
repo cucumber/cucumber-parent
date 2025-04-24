@@ -219,7 +219,6 @@
                         <links>
                             <link>https://docs.oracle.com/javase/8/docs/api/</link>
                         </links>
-                        <stylesheet>java</stylesheet>
                     </configuration>
                 </plugin>
 
