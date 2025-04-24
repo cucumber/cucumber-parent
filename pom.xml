@@ -5,7 +5,7 @@
 
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-parent</artifactId>
-    <version>4.3.4</version>
+    <version>4.3.5-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Cucumber Parent</name>
     <description>Common configuration for all Cucumber modules</description>
@@ -22,7 +22,7 @@
     </developers>
 
     <properties>
-        <project.build.outputTimestamp>1745511586</project.build.outputTimestamp>
+        <project.build.outputTimestamp>1745511588</project.build.outputTimestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <outputDirectory>${project.build.directory}</outputDirectory>
@@ -69,7 +69,7 @@
         <connection>scm:git:git://github.com/cucumber/cucumber-parent.git</connection>
         <developerConnection>scm:git:git@github.com:cucumber/cucumber-parent.git</developerConnection>
         <url>git://github.com/cucumber/cucumber-parent.git</url>
-        <tag>v4.3.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <profiles>
