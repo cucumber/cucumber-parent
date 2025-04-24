@@ -60,7 +60,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license</url>
+            <url>https://www.opensource.org/licenses/mit-license</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -363,6 +363,7 @@
                         <publishingServerId>central</publishingServerId>
                         <autoPublish>true</autoPublish>
                         <waitUntil>published</waitUntil>
+                        <deploymentName>${project.artifactId}</deploymentName>
                     </configuration>
                 </plugin>
 
