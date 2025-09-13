@@ -6,13 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [4.3.8] - 2025-09-14
 ### Fixed
 - Update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.4
 - Update dependency org.apache.maven.plugins:maven-shade-plugin to v3.6.1
 - Update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.5.4
-- 
+
 ## [4.3.7] - 2025-04-25
 ### Fixed
+- 
 - Use artifact:version format for deployment name
 
 ## [4.3.6] - 2025-04-25
@@ -83,7 +86,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.3.7...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.3.8...HEAD
+[4.3.8]: https://github.com/cucumber/cucumber-parent/compare/v4.3.7...v4.3.8
 [4.3.7]: https://github.com/cucumber/cucumber-parent/compare/v4.3.6...v4.3.7
 [4.3.6]: https://github.com/cucumber/cucumber-parent/compare/v4.3.5...v4.3.6
 [4.3.5]: https://github.com/cucumber/cucumber-parent/compare/v4.3.4...v4.3.5
