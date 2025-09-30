@@ -54,6 +54,9 @@
         <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <spotless-maven-plugin.version>3.0.0</spotless-maven-plugin.version>
+        <osgi.id>${project.Automatic-Module-Name}</osgi.id>
+        <osgi.exports>*;-noimport:=true</osgi.exports>
+        <osgi.imports>*</osgi.imports>
     </properties>
 
     <licenses>
@@ -235,6 +238,27 @@
                             </manifestEntries>
                         </archive>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>biz.aQute.bnd</groupId>
+                    <artifactId>bnd-maven-plugin</artifactId>
+                    <version>7.1.0</version>
+                    <executions>
+                        <execution>
+                            <id>bnd-process</id>
+                            <goals>
+                                <goal>bnd-process</goal>
+                            </goals>
+                            <configuration>
+                                <bnd><![CDATA[
+                                   Bundle-SymbolicName: ${osgi.id}
+                                   -exportcontents: ${osgi.exports}
+                                   Import-Package: ${osgi.imports}
+                                 ]]>
+                                </bnd>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
