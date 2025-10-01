@@ -50,10 +50,14 @@
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
+        <bnd-maven-plugin.version>7.1.0</bnd-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
         <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <spotless-maven-plugin.version>3.0.0</spotless-maven-plugin.version>
+        <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
+        <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
+        <osgi.import-package>*</osgi.import-package>
     </properties>
 
     <licenses>
@@ -235,6 +239,28 @@
                             </manifestEntries>
                         </archive>
                     </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>biz.aQute.bnd</groupId>
+                    <artifactId>bnd-maven-plugin</artifactId>
+                    <version>${bnd-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>bnd-process</id>
+                            <goals>
+                                <goal>bnd-process</goal>
+                            </goals>
+                            <configuration>
+                                <bnd><![CDATA[
+                                   Bundle-SymbolicName: ${osgi.bundle-symbolic-name}
+                                   -exportcontents: ${osgi.export-contents}
+                                   Import-Package: ${osgi.import-package}
+                                 ]]>
+                                </bnd>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
