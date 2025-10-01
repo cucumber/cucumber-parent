@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Generate OSGi meta data [#61](https://github.com/cucumber/cucumber-parent/pull/61)
 
 ## [4.3.8] - 2025-09-14
 ### Fixed
@@ -15,7 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.3.7] - 2025-04-25
 ### Fixed
-- 
 - Use artifact:version format for deployment name
 
 ## [4.3.6] - 2025-04-25
