@@ -55,9 +55,9 @@
         <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <spotless-maven-plugin.version>3.0.0</spotless-maven-plugin.version>
-        <osgi.id>${project.Automatic-Module-Name}</osgi.id>
-        <osgi.exports>*;-noimport:=true</osgi.exports>
-        <osgi.imports>*</osgi.imports>
+        <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
+        <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
+        <osgi.import-package>*</osgi.import-package>
     </properties>
 
     <licenses>
@@ -252,9 +252,9 @@
                             </goals>
                             <configuration>
                                 <bnd><![CDATA[
-                                   Bundle-SymbolicName: ${osgi.id}
-                                   -exportcontents: ${osgi.exports}
-                                   Import-Package: ${osgi.imports}
+                                   Bundle-SymbolicName: ${osgi.bundle-symbolic-name}
+                                   -exportcontents: ${osgi.export-contents}
+                                   Import-Package: ${osgi.import-package}
                                  ]]>
                                 </bnd>
                             </configuration>
