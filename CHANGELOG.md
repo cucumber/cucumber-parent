@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Generate OSGi meta data [#61](https://github.com/cucumber/cucumber-parent/pull/61)
 
+### Changed
+- Update dependency com.diffplug.spotless:spotless-maven-plugin to v3
+- Update dependency org.sonatype.central:central-publishing-maven-plugin to v0.9.0
+- Update dependency org.codehaus.mojo:versions-maven-plugin to v2.19.1
+- Update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.14.1
+- Update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.12.0
+
 ## [4.3.8] - 2025-09-14
 ### Fixed
 - Update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.4
