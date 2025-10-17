@@ -5,7 +5,7 @@
 
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-parent</artifactId>
-    <version>4.5.1-SNAPSHOT</version>
+    <version>5.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Cucumber Parent</name>
     <description>Common configuration for all Cucumber modules</description>
@@ -22,12 +22,20 @@
     </developers>
 
     <properties>
+        <!-- Project settings-->
         <project.build.outputTimestamp>1760538714</project.build.outputTimestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <minimum.maven.version>3.6.0</minimum.maven.version>
-        <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
-        <java.version>1.8</java.version>
+        <minimum.maven.version>3.9.0</minimum.maven.version>
+        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.parameters>true</maven.compiler.parameters>
+        
+        <!-- OSGI Configuration -->
+        <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
+        <osgi.import-package>*</osgi.import-package>
+        <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
+
+        <!-- Maven plugin versions -->
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-archetype-plugin.version>3.4.1</maven-archetype-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
@@ -49,15 +57,15 @@
         <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+
+        <!-- Other Maven plugin versions -->
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
         <bnd-maven-plugin.version>7.1.0</bnd-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
-        <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
         <spotless-maven-plugin.version>3.0.0</spotless-maven-plugin.version>
-        <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
-        <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
-        <osgi.import-package>*</osgi.import-package>
+        <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
     </properties>
 
     <licenses>
@@ -155,11 +163,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                    </configuration>
                 </plugin>
 
                 <plugin>
