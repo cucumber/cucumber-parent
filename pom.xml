@@ -66,6 +66,10 @@
         <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
         <spotless-maven-plugin.version>3.0.0</spotless-maven-plugin.version>
         <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
+        
+        <!-- Maven compiler plugin versions-->
+        <error-prone.version>2.43.0</error-prone.version>
+        <nullaway.version>0.12.11</nullaway.version>
     </properties>
 
     <licenses>
@@ -175,12 +179,12 @@
                             <path>
                                 <groupId>com.google.errorprone</groupId>
                                 <artifactId>error_prone_core</artifactId>
-                                <version>2.43.0</version>
+                                <version>${error-prone.version}</version>
                             </path>
                             <path>
                                 <groupId>com.uber.nullaway</groupId>
                                 <artifactId>nullaway</artifactId>
-                                <version>0.12.11</version>
+                                <version>${nullaway.version}</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>
