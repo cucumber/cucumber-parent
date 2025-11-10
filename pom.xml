@@ -189,7 +189,6 @@
                                         <property name="allowMissingParamTags" value="true"/>
                                         <property name="allowMissingReturnTag" value="true"/>
                                     </module>
-                                    <module name="MissingCtor"/>
                                     <module name="MissingDeprecated"/>
                                     <module name="MutableException"/>
                                     <module name="MissingOverride"/>
