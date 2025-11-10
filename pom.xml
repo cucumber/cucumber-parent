@@ -165,7 +165,9 @@
                                 <module name="UniqueProperties"/>
                                 <module name="com.puppycrawl.tools.checkstyle.TreeWalker">
                                     <module name="AvoidStarImport"/>
+                                    <module name="AnnotationUseStyle"/>
                                     <module name="DefaultComesLast"/>
+                                    <module name="DesignForExtension"/>
                                     <module name="EmptyBlock"/>
                                     <module name="EmptyCatchBlock"/>
                                     <module name="EmptyLineSeparator">
@@ -173,8 +175,11 @@
                                     </module>
                                     <module name="EmptyStatement"/>
                                     <module name="EqualsHashCode"/>
+                                    <module name="FallThrough"/>
                                     <module name="FinalClass"/>
                                     <module name="HideUtilityClassConstructor"/>
+                                    <module name="InnerTypeLast"/>
+                                    <module name="InterfaceIsType"/>
                                     <module name="InvalidJavadocPosition"/>
                                     <module name="JavadocBlockTagLocation"/>
                                     <module name="JavadocContentLocation"/>
@@ -184,6 +189,10 @@
                                         <property name="allowMissingParamTags" value="true"/>
                                         <property name="allowMissingReturnTag" value="true"/>
                                     </module>
+                                    <module name="MissingCtor"/>
+                                    <module name="MissingDeprecated"/>
+                                    <module name="MutableException"/>
+                                    <module name="MissingOverride"/>
                                     <module name="NoClone"/>
                                     <module name="NoCodeInFile"/>
                                     <module name="NoEnumTrailingComma"/>
