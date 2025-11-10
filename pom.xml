@@ -58,6 +58,9 @@
         <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
         <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
         <osgi.import-package>*</osgi.import-package>
+
+        <!-- Maven Checkstyle plugin versions -->
+        <puppycrawl-checkstyle.version>12.1.1</puppycrawl-checkstyle.version>
     </properties>
 
     <licenses>
@@ -143,6 +146,77 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${maven-checkstyle-plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>${puppycrawl-checkstyle.version}</version>
+                        </dependency>
+                    </dependencies>
+
+                    <configuration>
+                        <consoleOutput>true</consoleOutput>
+                        <failsOnError>true</failsOnError>
+                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        <!-- See: https://checkstyle.org/checks.html-->
+                        <checkstyleRules>
+                            <module name="Checker">
+                                <property name="severity" value="error"/>
+                                <module name="UniqueProperties"/>
+                                <module name="com.puppycrawl.tools.checkstyle.TreeWalker">
+                                    <module name="AvoidStarImport"/>
+                                    <module name="DefaultComesLast"/>
+                                    <module name="EmptyBlock"/>
+                                    <module name="EmptyCatchBlock"/>
+                                    <module name="EmptyLineSeparator">
+                                        <property name="allowNoEmptyLineBetweenFields" value="true"/>
+                                    </module>
+                                    <module name="EmptyStatement"/>
+                                    <module name="EqualsHashCode"/>
+                                    <module name="FinalClass"/>
+                                    <module name="HideUtilityClassConstructor"/>
+                                    <module name="InvalidJavadocPosition"/>
+                                    <module name="JavadocBlockTagLocation"/>
+                                    <module name="JavadocContentLocation"/>
+                                    <module name="JavadocLeadingAsteriskAlign"/>
+                                    <module name="JavadocMissingLeadingAsterisk"/>
+                                    <module name="JavadocMethod">
+                                        <property name="allowMissingParamTags" value="true"/>
+                                        <property name="allowMissingReturnTag" value="true"/>
+                                    </module>
+                                    <module name="NoClone"/>
+                                    <module name="NoCodeInFile"/>
+                                    <module name="NoEnumTrailingComma"/>
+                                    <module name="NoFinalizer"/>
+                                    <module name="OneTopLevelClass"/>
+                                    <module name="OuterTypeFilename"/>
+                                    <module name="OuterTypeNumber"/>
+                                    <module name="PackageDeclaration"/>
+                                    <module name="PackageName"/>
+                                    <module name="RedundantImport"/>
+                                    <module name="RedundantModifier"/>
+                                    <module name="StringLiteralEquality"/>
+                                    <module name="TrailingComment"/>
+                                    <module name="UnnecessaryNullCheckWithInstanceOf"/>
+                                    <module name="UnnecessaryParentheses"/>
+                                    <module name="UnnecessarySemicolonAfterOuterTypeDeclaration"/>
+                                    <module name="UnnecessarySemicolonAfterTypeMemberDeclaration"/>
+                                    <module name="UnnecessarySemicolonInEnumeration"/>
+                                    <module name="UnnecessarySemicolonInTryWithResources"/>
+                                    <module name="UnusedImports"/>
+                                    <module name="UnusedLocalVariable"/>
+                                    <module name="NonEmptyAtclauseDescription"/>
+                                    <module name="SuppressWarningsHolder"/>
+                                </module>
+                                <module name="RegexpSingleline">
+                                    <property name="format" value="@author"/>
+                                    <property name="message" value="Please do not use @author tags"/>
+                                    <property name="fileExtensions" value="java,groovy,kt"/>
+                                </module>
+                                <module name="SuppressWarningsFilter"/>
+                            </module>
+                        </checkstyleRules>
+                    </configuration>
                 </plugin>
 
                 <plugin>
