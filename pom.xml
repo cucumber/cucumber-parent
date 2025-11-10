@@ -48,7 +48,7 @@
         <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
         <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
         <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
-        <maven-release-plugin.version>3.1.1</maven-release-plugin.version>
+        <maven-release-plugin.version>3.2.0</maven-release-plugin.version>
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-shade-plugin.version>3.6.1</maven-shade-plugin.version>
         <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
@@ -56,7 +56,7 @@
         <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
         <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
-        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+        <maven-war-plugin.version>3.5.0</maven-war-plugin.version>
 
         <!-- Other Maven plugin versions -->
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
@@ -177,7 +177,9 @@
                                 <module name="UniqueProperties"/>
                                 <module name="com.puppycrawl.tools.checkstyle.TreeWalker">
                                     <module name="AvoidStarImport"/>
+                                    <module name="AnnotationUseStyle"/>
                                     <module name="DefaultComesLast"/>
+                                    <module name="DesignForExtension"/>
                                     <module name="EmptyBlock"/>
                                     <module name="EmptyCatchBlock"/>
                                     <module name="EmptyLineSeparator">
@@ -185,8 +187,11 @@
                                     </module>
                                     <module name="EmptyStatement"/>
                                     <module name="EqualsHashCode"/>
+                                    <module name="FallThrough"/>
                                     <module name="FinalClass"/>
                                     <module name="HideUtilityClassConstructor"/>
+                                    <module name="InnerTypeLast"/>
+                                    <module name="InterfaceIsType"/>
                                     <module name="InvalidJavadocPosition"/>
                                     <module name="JavadocBlockTagLocation"/>
                                     <module name="JavadocContentLocation"/>
@@ -196,6 +201,9 @@
                                         <property name="allowMissingParamTags" value="true"/>
                                         <property name="allowMissingReturnTag" value="true"/>
                                     </module>
+                                    <module name="MissingDeprecated"/>
+                                    <module name="MutableException"/>
+                                    <module name="MissingOverride"/>
                                     <module name="NoClone"/>
                                     <module name="NoCodeInFile"/>
                                     <module name="NoEnumTrailingComma"/>
@@ -241,7 +249,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
-
                     <configuration>
                         <compilerArgs>
                             <arg>-Werror</arg>
