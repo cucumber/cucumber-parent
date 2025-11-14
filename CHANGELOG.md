@@ -6,8 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Added
-- Add default checkstyle configuration [#63](https://github.com/cucumber/cucumber-parent/pull/63)
+### Changed
+- Set default release version to 17 [#62](https://github.com/cucumber/cucumber-parent/pull/62)
+- Set minimum Maven to v3.9.0
+- Enable Error prone with Nullaway
+- Enable Checkstyle
 
 ## [4.5.0] - 2025-10-15
 ### Changed
