@@ -226,6 +226,13 @@
                                     <module name="UnusedLocalVariable"/>
                                     <module name="NonEmptyAtclauseDescription"/>
                                     <module name="SuppressWarningsHolder"/>
+<!--                                    TODO: Do later -->
+<!--                                    <module name="RegexpSinglelineJava">-->
+<!--                                        <property name="maximum" value="0"/>-->
+<!--                                        <property name="format" value="String\.format"/>-->
+<!--                                        <property name="message" value="Please use String.formatted() (non-static) rather than String.format() (static)."/>-->
+<!--                                        <property name="ignoreComments" value="true"/>-->
+<!--                                    </module>-->
                                 </module>
                                 <module name="RegexpSingleline">
                                     <property name="format" value="@author"/>
@@ -253,7 +260,14 @@
                             <arg>-Werror</arg>
                             <arg>--should-stop=ifError=FLOW</arg>
                             <arg>-XDcompilePolicy=simple</arg>
-                            <arg>-Xplugin:ErrorProne -XepOpt:NullAway:AnnotatedPackages=io.cucumber -Xep:AnnotateFormatMethod:OFF -Xep:DoNotCallSuggester:OFF -Xep:DoNotCallSuggester:OFF -Xep:InlineMeSuggester:OFF</arg>
+                            <arg>-Xplugin:ErrorProne \
+                                 -XepOpt:NullAway:AnnotatedPackages=io.cucumber \
+                                 -Xep:AnnotateFormatMethod:OFF \
+                                 -Xep:DoNotCallSuggester:OFF \
+                                 -Xep:DoNotCallSuggester:OFF \
+                                 -Xep:InlineMeSuggester:OFF \
+                                 -Xep:ImmutableEnumChecker:OFF
+                            </arg>
                         </compilerArgs>
                         <annotationProcessorPaths>
                             <path>
