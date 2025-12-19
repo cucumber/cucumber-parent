@@ -55,6 +55,7 @@
         <versions-maven-plugin.version>2.20.1</versions-maven-plugin.version>
         <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
+        <tycho-wrap-plugin.version>5.0.1</tycho-wrap-plugin.version>
         <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
         <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
         <osgi.import-package>*</osgi.import-package>
@@ -371,6 +372,12 @@
                     <groupId>com.diffplug.spotless</groupId>
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${spotless-maven-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-wrap-plugin</artifactId>
+                    <version>${tycho-wrap-plugin.version}</version>
                 </plugin>
 
             </plugins>
