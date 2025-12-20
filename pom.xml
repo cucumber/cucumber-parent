@@ -69,7 +69,7 @@
 
         <!-- Maven compiler plugin versions-->
         <error-prone.version>2.43.0</error-prone.version>
-        <nullaway.version>0.12.11</nullaway.version>
+        <nullaway.version>0.12.15</nullaway.version>
 
         <!-- Maven Checkstyle plugin versions -->
         <puppycrawl-checkstyle.version>12.1.1</puppycrawl-checkstyle.version>
@@ -262,6 +262,7 @@
                             <arg>-XDcompilePolicy=simple</arg>
                             <arg>-Xplugin:ErrorProne \
                                  -XepOpt:NullAway:AnnotatedPackages=io.cucumber \
+                                 -XepOpt:NullAway:ExcludedFieldAnnotations=org.junit.jupiter.api.io.TempDir,org.mockito.Mock,org.mockito.Captor \
                                  -Xep:AnnotateFormatMethod:OFF \
                                  -Xep:DoNotCallSuggester:OFF \
                                  -Xep:DoNotCallSuggester:OFF \
