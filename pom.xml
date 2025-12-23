@@ -72,7 +72,7 @@
         <nullaway.version>0.12.15</nullaway.version>
 
         <!-- Maven Checkstyle plugin versions -->
-        <puppycrawl-checkstyle.version>12.1.1</puppycrawl-checkstyle.version>
+        <puppycrawl-checkstyle.version>12.3.0</puppycrawl-checkstyle.version>
     </properties>
 
     <licenses>
@@ -174,6 +174,9 @@
                         <checkstyleRules>
                             <module name="Checker">
                                 <property name="severity" value="error"/>
+                                <module name="BeforeExecutionExclusionFileFilter">
+                                    <property name="fileNamePattern" value="module\-info\.java$"/>
+                                </module>
                                 <module name="UniqueProperties"/>
                                 <module name="com.puppycrawl.tools.checkstyle.TreeWalker">
                                     <module name="AvoidStarImport"/>
