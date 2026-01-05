@@ -61,7 +61,6 @@
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
         <bnd-maven-plugin.version>7.1.0</bnd-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
-        <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
         <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
         <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
@@ -269,7 +268,8 @@
                                  -Xep:DoNotCallSuggester:OFF \
                                  -Xep:DoNotCallSuggester:OFF \
                                  -Xep:InlineMeSuggester:OFF \
-                                 -Xep:ImmutableEnumChecker:OFF
+                                 -Xep:ImmutableEnumChecker:OFF \
+                                 -Xep:UnicodeInCode:OFF
                             </arg>
                         </compilerArgs>
                         <annotationProcessorPaths>
@@ -484,12 +484,6 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>org.commonjava.maven.plugins</groupId>
-                    <artifactId>directory-maven-plugin</artifactId>
-                    <version>${directory-maven-plugin.version}</version>
-                </plugin>
-
-                <plugin>
                     <groupId>com.diffplug.spotless</groupId>
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${spotless-maven-plugin.version}</version>
@@ -583,11 +577,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.commonjava.maven.plugins</groupId>
-                <artifactId>directory-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
