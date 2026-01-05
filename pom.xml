@@ -269,7 +269,8 @@
                                  -Xep:DoNotCallSuggester:OFF \
                                  -Xep:InlineMeSuggester:OFF \
                                  -Xep:ImmutableEnumChecker:OFF \
-                                 -Xep:UnicodeInCode:OFF
+                                 -Xep:UnicodeInCode:OFF \
+                                 -Xep:BanJNDI:OFF
                             </arg>
                         </compilerArgs>
                         <annotationProcessorPaths>
