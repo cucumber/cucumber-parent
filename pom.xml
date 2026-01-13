@@ -33,6 +33,7 @@
         <!-- OSGI Configuration -->
         <osgi.export-contents>*;-noimport:=true</osgi.export-contents>
         <osgi.import-package>*</osgi.import-package>
+        <osgi.bundle-symbolic-name>${project.Automatic-Module-Name}</osgi.bundle-symbolic-name>
 
         <!-- Maven plugin versions -->
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
@@ -360,6 +361,9 @@
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             </manifest>
+                            <manifestEntries>
+                                <Automatic-Module-Name>${project.Automatic-Module-Name}</Automatic-Module-Name>
+                            </manifestEntries>
                         </archive>
                     </configuration>
                 </plugin>
