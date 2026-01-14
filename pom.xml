@@ -228,13 +228,12 @@
                                     <module name="UnusedLocalVariable"/>
                                     <module name="NonEmptyAtclauseDescription"/>
                                     <module name="SuppressWarningsHolder"/>
-<!--                                    TODO: Do later -->
-<!--                                    <module name="RegexpSinglelineJava">-->
-<!--                                        <property name="maximum" value="0"/>-->
-<!--                                        <property name="format" value="String\.format"/>-->
-<!--                                        <property name="message" value="Please use String.formatted() (non-static) rather than String.format() (static)."/>-->
-<!--                                        <property name="ignoreComments" value="true"/>-->
-<!--                                    </module>-->
+                                    <module name="RegexpSinglelineJava">
+                                        <property name="maximum" value="0"/>
+                                        <property name="format" value="String\.format"/>
+                                        <property name="message" value="Please use String.formatted() (non-static) rather than String.format() (static)."/>
+                                        <property name="ignoreComments" value="true"/>
+                                    </module>
                                 </module>
                                 <module name="RegexpSingleline">
                                     <property name="format" value="@author"/>
