@@ -265,6 +265,7 @@
                             <arg>-Xplugin:ErrorProne \
                                  -XepOpt:NullAway:AnnotatedPackages=io.cucumber \
                                  -XepOpt:NullAway:ExcludedFieldAnnotations=org.junit.jupiter.api.io.TempDir,org.mockito.Mock,org.mockito.Captor \
+                                 -XepOpt:NullAway:CustomInitializerAnnotations=io.cucumber.java.Before
                                  -Xep:AnnotateFormatMethod:OFF \
                                  -Xep:DoNotCallSuggester:OFF \
                                  -Xep:DoNotCallSuggester:OFF \
