@@ -25,6 +25,7 @@
         <!-- Project settings-->
         <project.build.outputTimestamp>1760538714</project.build.outputTimestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.propertiesEncoding>UTF-8</project.build.propertiesEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <minimum.maven.version>3.9.0</minimum.maven.version>
         <maven.compiler.release>17</maven.compiler.release>
@@ -547,6 +548,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <propertiesEncoding>${project.build.propertiesEncoding}</propertiesEncoding>
+                </configuration>
             </plugin>
 
             <plugin>
