@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Set release version to 17 [#62](https://github.com/cucumber/cucumber-parent/pull/62)
+- Set minimum Maven to v3.9.0
+- Enable Error prone with Nullaway
+- Enable Checkstyle
+
+# Removed
+- Removed `project.Automatic-Module-Name` to set automatic module name.
+- Removed `directory-maven-plugin`.
 
 ## [4.6.0] - 2025-12-19
 ### Added
