@@ -23,7 +23,7 @@
 
     <properties>
         <!-- Project settings-->
-        <project.build.outputTimestamp>1760538714</project.build.outputTimestamp>
+        <project.build.outputTimestamp>1766103205</project.build.outputTimestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.propertiesEncoding>UTF-8</project.build.propertiesEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -46,25 +46,26 @@
         <maven-failsafe-plugin.version>3.5.4</maven-failsafe-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
-        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-jar-plugin.version>3.5.0</maven-jar-plugin.version>
         <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
-        <maven-release-plugin.version>3.2.0</maven-release-plugin.version>
+        <maven-release-plugin.version>3.3.1</maven-release-plugin.version>
         <maven-resources-plugin.version>3.4.0</maven-resources-plugin.version>
         <maven-shade-plugin.version>3.6.1</maven-shade-plugin.version>
         <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
-        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+        <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
         <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
-        <maven-war-plugin.version>3.5.0</maven-war-plugin.version>
+        <maven-war-plugin.version>3.5.1</maven-war-plugin.version>
 
         <!-- Other Maven plugin versions -->
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
-        <bnd-maven-plugin.version>7.1.0</bnd-maven-plugin.version>
-        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
+        <bnd-maven-plugin.version>7.2.1</bnd-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
         <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
-        <versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
+        <tycho-wrap-plugin.version>5.0.1</tycho-wrap-plugin.version>
+        <versions-maven-plugin.version>2.21.0</versions-maven-plugin.version>
 
         <!-- Maven compiler plugin versions-->
         <error-prone.version>2.43.0</error-prone.version>
@@ -489,6 +490,12 @@
                     <groupId>com.diffplug.spotless</groupId>
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${spotless-maven-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-wrap-plugin</artifactId>
+                    <version>${tycho-wrap-plugin.version}</version>
                 </plugin>
 
             </plugins>

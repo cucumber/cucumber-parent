@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable Error prone with Nullaway
 - Enable Checkstyle
 
+## [4.6.0] - 2025-12-19
+### Added
+- Added tycho-wrap-plugin with verify mojo for OSGi bundle validation
+
 ## [4.5.0] - 2025-10-15
 ### Changed
 - Don't wait until the artifact has been published
@@ -105,7 +109,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.5.0...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v4.6.0...HEAD
+[4.6.0]: https://github.com/cucumber/cucumber-parent/compare/v4.5.0...v4.6.0
 [4.5.0]: https://github.com/cucumber/cucumber-parent/compare/v4.4.0...v4.5.0
 [4.4.0]: https://github.com/cucumber/cucumber-parent/compare/v4.3.8...v4.4.0
 [4.3.8]: https://github.com/cucumber/cucumber-parent/compare/v4.3.7...v4.3.8
