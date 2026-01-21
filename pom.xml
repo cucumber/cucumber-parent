@@ -68,7 +68,7 @@
         <versions-maven-plugin.version>2.21.0</versions-maven-plugin.version>
 
         <!-- Maven compiler plugin versions-->
-        <error-prone.version>2.43.0</error-prone.version>
+        <error-prone.version>2.46.0</error-prone.version>
         <nullaway.version>0.12.15</nullaway.version>
 
         <!-- Maven Checkstyle plugin versions -->
