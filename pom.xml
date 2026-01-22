@@ -63,7 +63,7 @@
         <bnd-maven-plugin.version>7.2.1</bnd-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
-        <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
+        <spotless-maven-plugin.version>3.2.0</spotless-maven-plugin.version>
         <tycho-wrap-plugin.version>5.0.1</tycho-wrap-plugin.version>
         <versions-maven-plugin.version>2.21.0</versions-maven-plugin.version>
 
