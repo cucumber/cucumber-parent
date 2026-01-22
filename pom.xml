@@ -36,7 +36,7 @@
         <osgi.import-package>*</osgi.import-package>
 
         <!-- Maven plugin versions -->
-        <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
+        <maven-antrun-plugin.version>3.2.0</maven-antrun-plugin.version>
         <maven-archetype-plugin.version>3.4.1</maven-archetype-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.5.0</maven-clean-plugin.version>
