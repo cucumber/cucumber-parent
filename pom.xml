@@ -69,7 +69,7 @@
 
         <!-- Maven compiler plugin versions-->
         <error-prone.version>2.46.0</error-prone.version>
-        <nullaway.version>0.13.0</nullaway.version>
+        <nullaway.version>0.13.1</nullaway.version>
 
         <!-- Maven Checkstyle plugin versions -->
         <puppycrawl-checkstyle.version>13.0.0</puppycrawl-checkstyle.version>
