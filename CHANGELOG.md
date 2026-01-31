@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Fixed
+- Make Error prone work on Java 21
 
 ## [5.1.0] - 2026-01-31
 ### Added
