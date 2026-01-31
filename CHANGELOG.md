@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.1.1] - 2026-01-31
 ### Fixed
 - Make Error prone work on Java 21
 
@@ -121,7 +123,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.1.0...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.1.1...HEAD
+[5.1.1]: https://github.com/cucumber/cucumber-parent/compare/v5.1.0...v5.1.1
 [5.1.0]: https://github.com/cucumber/cucumber-parent/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/cucumber/cucumber-parent/compare/v4.6.0...v5.0.0
 [4.6.0]: https://github.com/cucumber/cucumber-parent/compare/v4.5.0...v4.6.0
