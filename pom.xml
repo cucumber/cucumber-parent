@@ -73,7 +73,7 @@
         <nullaway.version>0.13.1</nullaway.version>
 
         <!-- Maven Checkstyle plugin versions -->
-        <puppycrawl-checkstyle.version>13.1.0</puppycrawl-checkstyle.version>
+        <puppycrawl-checkstyle.version>13.2.0</puppycrawl-checkstyle.version>
     </properties>
 
     <licenses>
