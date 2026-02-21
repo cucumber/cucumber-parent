@@ -8,7 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
-### Changed 
+
+## [5.2.0] - 2026-02-21
+### Changed
 - update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.10.0
 - update dependency com.puppycrawl.tools:checkstyle to v13.2.0
 - update dependency com.google.errorprone:error_prone_core to v2.47.0
@@ -126,7 +128,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.1.1...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.2.0...HEAD
+[5.2.0]: https://github.com/cucumber/cucumber-parent/compare/v5.1.1...v5.2.0
 [5.1.1]: https://github.com/cucumber/cucumber-parent/compare/v5.1.0...v5.1.1
 [5.1.0]: https://github.com/cucumber/cucumber-parent/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/cucumber/cucumber-parent/compare/v4.6.0...v5.0.0
