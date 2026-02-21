@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Changed 
+- update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.10.0
+- update dependency com.puppycrawl.tools:checkstyle to v13.2.0
+- update dependency com.google.errorprone:error_prone_core to v2.47.0
+- update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.15.0
 
 ## [5.1.1] - 2026-01-31
 ### Fixed
@@ -23,8 +28,6 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 - Set minimum Maven to v3.9.0
 - Enable Error prone with Nullaway
 - Enable Checkstyle
-- 
-- 
 
 ## [4.6.0] - 2025-12-19
 ### Added
