@@ -12,6 +12,19 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 - Added org.codehaus.mojo:exec-maven-plugin to plugin management
 - Added org.codehaus.mojo:license-maven-plugin to plugin management
 
+### Changed
+- update dependency com.google.errorprone:error_prone_core to v2.49.0
+- update dependency com.puppycrawl.tools:checkstyle to v13.4.0
+- update dependency biz.aqute.bnd:bnd-maven-plugin to v7.2.3
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.4.0
+- update dependency org.apache.maven.plugins:maven-resources-plugin to v3.5.0
+- update dependency org.apache.maven.plugins:maven-shade-plugin to v3.6.2
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.3.0
+- update dependency com.puppycrawl.tools:checkstyle to v13.3.0
+- update dependency com.google.errorprone:error_prone_core to v2.48.0
+- update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.5
+- update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.5.5
+
 ## [5.2.0] - 2026-02-21
 ### Changed
 - update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.10.0
