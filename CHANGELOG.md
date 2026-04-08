@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Added
+- Added org.codehaus.mojo:exec-maven-plugin to plugin management
+- Added org.codehaus.mojo:license-maven-plugin to plugin management
 
 ## [5.2.0] - 2026-02-21
 ### Changed
