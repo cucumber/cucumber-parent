@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Fixed
+- Use `maven.compiler.release` version for Javadoc generation
+
+### Changed
+- Update dependency com.uber.nullaway:nullaway to v0.13.2
 
 ## [5.3.0] - 2026-04-08
 ### Added

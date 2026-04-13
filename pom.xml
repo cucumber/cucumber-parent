@@ -355,10 +355,6 @@
                     <version>${maven-javadoc-plugin.version}</version>
                     <configuration>
                         <use>false</use>
-                        <source>1.8</source>
-                        <links>
-                            <link>https://docs.oracle.com/javase/8/docs/api/</link>
-                        </links>
                     </configuration>
                 </plugin>
 
