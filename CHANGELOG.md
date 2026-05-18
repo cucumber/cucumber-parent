@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.4.0] - 2026-05-18
 ### Added
 - Automatically distribute the `LICENSE` with any jar file build
 
@@ -161,7 +163,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.3.1...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.4.0...HEAD
+[5.4.0]: https://github.com/cucumber/cucumber-parent/compare/v5.3.1...v5.4.0
 [5.3.1]: https://github.com/cucumber/cucumber-parent/compare/v5.3.0...v5.3.1
 [5.3.0]: https://github.com/cucumber/cucumber-parent/compare/v5.2.0...v5.3.0
 [5.2.0]: https://github.com/cucumber/cucumber-parent/compare/v5.1.1...v5.2.0
