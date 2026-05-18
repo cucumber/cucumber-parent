@@ -11,6 +11,9 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 ### Fixed
 - Set `project.rootdir` to absolute path rather than relative path. 
 
+### Changed
+- Update dependency org.apache.maven.plugins:maven-enforcer-plugin to v3.6.3
+
 ## [5.4.0] - 2026-05-18
 ### Added
 - Automatically distribute the `LICENSE` with any jar file build
