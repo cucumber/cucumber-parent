@@ -27,7 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.propertiesEncoding>UTF-8</project.build.propertiesEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.rootdir>.</project.rootdir>
+        <project.rootdir>${project.basedir}</project.rootdir>
         <minimum.maven.version>3.9.0</minimum.maven.version>
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>

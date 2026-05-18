@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Fixed
+- Set `project.rootdir` to absolute path rather than relative path. 
 
 ## [5.4.0] - 2026-05-18
 ### Added
