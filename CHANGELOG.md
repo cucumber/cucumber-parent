@@ -9,7 +9,13 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## [Unreleased]
 ### Added
-- Automatically distribute the LICENSE with any jar file build
+- Automatically distribute the `LICENSE` with any jar file build
+
+### Changed
+- Update zizmorcore/zizmor-action action to v0.5.6
+- Update dependency com.diffplug.spotless:spotless-maven-plugin to v3.5.1
+- Update dependency com.puppycrawl.tools:checkstyle to v13.4.2
+- Update dependency com.uber.nullaway:nullaway to v0.13.4
 
 ## [5.3.1] - 2026-04-13
 ### Changed
