@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Added
+- Automatically distribute the LICENSE with any jar file build
 
 ## [5.3.1] - 2026-04-13
 ### Changed

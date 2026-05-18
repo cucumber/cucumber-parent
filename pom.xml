@@ -27,6 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.propertiesEncoding>UTF-8</project.build.propertiesEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.rootdir>.</project.rootdir>
         <minimum.maven.version>3.9.0</minimum.maven.version>
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
@@ -577,6 +578,24 @@
                 <configuration>
                     <propertiesEncoding>${project.build.propertiesEncoding}</propertiesEncoding>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>copy-license</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/META-INF</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.rootdir}</directory>
+                                    <include>LICENSE</include>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
