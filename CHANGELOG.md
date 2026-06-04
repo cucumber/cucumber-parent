@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Changed
+- Update nullaway.version to v0.13.5
+- Update bnd-maven-plugin.version to v7.3.0
+- Update actions/checkout action to v6.0.3
+- Update dependency com.puppycrawl.tools:checkstyle to v13.5.0
+- Update dependency org.eclipse.tycho:tycho-wrap-plugin to v5.0.3
+- Update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.11.0
+- Update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.6
+- Update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.5.6
+- Update dependency com.diffplug.spotless:spotless-maven-plugin to v3.6.0
+- Update dependency org.apache.maven.plugins:maven-site-plugin to v3.22.0
 
 ## [5.4.1] - 2026-05-19
 ### Changed
