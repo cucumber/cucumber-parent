@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.5.0] - 2026-06-04
 ### Changed
 - Update nullaway.version to v0.13.5
 - Update bnd-maven-plugin.version to v7.3.0
@@ -181,7 +183,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.4.1...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.5.0...HEAD
+[5.5.0]: https://github.com/cucumber/cucumber-parent/compare/v5.4.1...v5.5.0
 [5.4.1]: https://github.com/cucumber/cucumber-parent/compare/v5.4.0...v5.4.1
 [5.4.0]: https://github.com/cucumber/cucumber-parent/compare/v5.3.1...v5.4.0
 [5.3.1]: https://github.com/cucumber/cucumber-parent/compare/v5.3.0...v5.3.1
