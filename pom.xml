@@ -499,6 +499,10 @@
                     <version>${central-publishing-maven-plugin.version}</version>
                     <extensions>true</extensions>
                     <configuration>
+                        <!--
+                        Don't include non-required checksums. They count against the limit.
+                        See: https://central.sonatype.org/publish/maven-central-publishing-limits/ -->
+                        <checksums>required</checksums>
                         <publishingServerId>central</publishingServerId>
                         <autoPublish>true</autoPublish>
                         <deploymentName>${project.artifactId}:${project.version}</deploymentName>

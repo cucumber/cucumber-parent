@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Changed
+- Only publish required checksum files to Central
+- Update spotless-maven-plugin.version to v3.7.0
+- Update nullaway.version to v0.13.7
+- Update central-publishing-maven-plugin.version to v0.11.0
+- Update puppycrawl-checkstyle.version to v13.6.0
+- Update error-prone monorepo to v2.50.0
+- Update jacoco-maven-plugin.version to v0.8.15
+- Update nullaway.version to v0.13.6
 
 ## [5.5.0] - 2026-06-04
 ### Changed
