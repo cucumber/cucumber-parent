@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.6.0] - 2026-06-23
 ### Changed
 - Only publish required checksum files to Central
 - Update spotless-maven-plugin.version to v3.7.0
@@ -192,7 +194,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.5.0...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.6.0...HEAD
+[5.6.0]: https://github.com/cucumber/cucumber-parent/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/cucumber/cucumber-parent/compare/v5.4.1...v5.5.0
 [5.4.1]: https://github.com/cucumber/cucumber-parent/compare/v5.4.0...v5.4.1
 [5.4.0]: https://github.com/cucumber/cucumber-parent/compare/v5.3.1...v5.4.0
