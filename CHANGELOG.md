@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Changed
+- Update com.puppycrawl.tools:checkstyle to v14.1.0
+- Update com.uber.nullaway:nullaway to v0.14.1
+- Update com.diffplug.spotless:spotless-maven-plugin to v3.10.1
+- Update biz.aQute.bnd:bnd-maven-plugin to v7.4.0
+- Update org.eclipse.tycho:tycho-wrap-plugin to v5.0.4
 
 ## [5.6.0] - 2026-06-23
 ### Changed
