@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.7.0] - 2026-09-01
 ### Changed
 - Update com.puppycrawl.tools:checkstyle to v14.1.0
 - Update com.uber.nullaway:nullaway to v0.14.1
@@ -200,7 +202,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.6.0...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.7.0...HEAD
+[5.7.0]: https://github.com/cucumber/cucumber-parent/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/cucumber/cucumber-parent/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/cucumber/cucumber-parent/compare/v5.4.1...v5.5.0
 [5.4.1]: https://github.com/cucumber/cucumber-parent/compare/v5.4.0...v5.4.1
