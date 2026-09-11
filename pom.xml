@@ -61,7 +61,7 @@
         <maven-war-plugin.version>3.5.1</maven-war-plugin.version>
 
         <!-- Other Maven plugin versions -->
-        <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>
+        <build-helper-maven-plugin.version>3.6.2</build-helper-maven-plugin.version>
         <bnd-maven-plugin.version>7.4.0</bnd-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
         <exec-maven-plugin.version>3.6.3</exec-maven-plugin.version>
