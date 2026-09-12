@@ -69,7 +69,7 @@
         <license-maven-plugin.version>2.7.1</license-maven-plugin.version>
         <spotless-maven-plugin.version>3.10.2</spotless-maven-plugin.version>
         <tycho-wrap-plugin.version>5.0.4</tycho-wrap-plugin.version>
-        <versions-maven-plugin.version>2.21.0</versions-maven-plugin.version>
+        <versions-maven-plugin.version>2.22.0</versions-maven-plugin.version>
 
         <!-- Maven compiler plugin versions-->
         <error-prone.version>2.50.0</error-prone.version>
