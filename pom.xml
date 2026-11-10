@@ -66,7 +66,7 @@
         <central-publishing-maven-plugin.version>0.12.0</central-publishing-maven-plugin.version>
         <exec-maven-plugin.version>3.7.0</exec-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.16</jacoco-maven-plugin.version>
-        <license-maven-plugin.version>2.8.0</license-maven-plugin.version>
+        <license-maven-plugin.version>2.9.0</license-maven-plugin.version>
         <spotless-maven-plugin.version>3.11.0</spotless-maven-plugin.version>
         <tycho-wrap-plugin.version>5.0.4</tycho-wrap-plugin.version>
         <versions-maven-plugin.version>2.24.0</versions-maven-plugin.version>
