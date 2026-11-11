@@ -8,6 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+### Changed
+- Update dependency com.diffplug.spotless:spotless-maven-plugin to v3.11.0
+- Update dependency com.google.errorprone:error_prone_core to v2.52.0
+- Update dependency com.puppycrawl.tools:checkstyle to v14.4.0
+- Update dependency com.uber.nullaway:nullaway to v0.14.3
+- Update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.16.0
+- Update dependency org.apache.maven.plugins:maven-deploy-plugin to v3.2.0
+- Update dependency org.apache.maven.plugins:maven-enforcer-plugin to v3.7.0
+- Update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.6.1
+- Update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.6.1
+- Update dependency org.codehaus.mojo:build-helper-maven-plugin to v3.8.0
+- Update dependency org.codehaus.mojo:exec-maven-plugin to v3.7.0
+- Update dependency org.codehaus.mojo:license-maven-plugin to v2.9.0
+- Update dependency org.codehaus.mojo:versions-maven-plugin to v2.25.1
+- Update dependency org.jacoco:jacoco-maven-plugin to v0.8.16
+- Update dependency org.sonatype.central:central-publishing-maven-plugin to v0.12.0
 
 ## [5.7.0] - 2026-09-01
 ### Changed
