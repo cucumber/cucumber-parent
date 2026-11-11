@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removed `project.Automatic-Module-Name` to set automatic module name.Removed `directory-maven-plugin`.
 
 ## [Unreleased]
+
+## [5.8.0] - 2026-11-11
 ### Changed
 - Update dependency com.diffplug.spotless:spotless-maven-plugin to v3.11.0
 - Update dependency com.google.errorprone:error_prone_core to v2.52.0
@@ -218,7 +220,8 @@ Removed `project.Automatic-Module-Name` to set automatic module name.Removed `di
 
 ## Changed
 
-[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.7.0...HEAD
+[Unreleased]: https://github.com/cucumber/cucumber-parent/compare/v5.8.0...HEAD
+[5.8.0]: https://github.com/cucumber/cucumber-parent/compare/v5.7.0...v5.8.0
 [5.7.0]: https://github.com/cucumber/cucumber-parent/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/cucumber/cucumber-parent/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/cucumber/cucumber-parent/compare/v5.4.1...v5.5.0
